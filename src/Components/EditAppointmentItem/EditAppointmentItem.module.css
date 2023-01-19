@@ -1,0 +1,122 @@
+.appointment {
+    background-color: #c2c2c25e;
+    min-height: 5em;
+    border-top: 2px solid rgb(216, 216, 216);
+    transition: all .3s;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: .5em;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgb(221, 221, 221);
+    position: relative;
+}
+
+.h3 {
+    margin-left: 1em;
+}
+
+.remove {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+    padding: .5em;
+    border-radius: 10em;
+    height: 1em;
+    width: 1em;
+    background-color: rgb(30, 36, 56);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    user-select: none;
+}
+
+.remove:hover {
+    /* background-blend-mode: lighten, color-dodge, color-dodge, normal; */
+    background-color: rgba(30, 36, 56, .7);
+}
+
+.remove:active {
+    filter: brightness(.7);
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    row-gap: .3em;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+.input {
+    width: 15em;
+    padding: .8em;
+    border: none;
+    outline: none;
+    background-color: rgb(230, 230, 230);
+    transition: all .3s;
+}
+
+.input:focus {
+    background-color: #d3d3d3;
+}
+
+.textBox {
+    height: 20em;
+    width: 29.4em;
+    max-width: 29.4em;
+    height: 6em;
+    transition: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(230, 230, 230) !important;
+}
+
+.save {
+    width: 100%;
+    margin-top: .5em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    color: white;
+    padding: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: .3em;
+    cursor: pointer;
+    background-color: rgb(30, 36, 56);
+    user-select: none;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: rgba(30, 36, 56, .7);
+}
+
+.button:active {
+    filter: brightness(.7);
+}
+
+.disabled {
+    user-select: none;
+    pointer-events: none;
+    opacity: .9;
+    filter: brightness(40%)
+}
+
+@media screen and (max-width: 600px) {
+    .textBox {
+        width: auto;
+        max-width: 60vw;
+    }
+}

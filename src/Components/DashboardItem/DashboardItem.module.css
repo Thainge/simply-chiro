@@ -1,0 +1,119 @@
+.absoluteCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+}
+
+/* List items */
+
+.listItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .2em;
+    border-bottom: 1px solid rgb(196, 191, 191);
+    padding: 1em;
+}
+
+.item,
+.itemStatus,
+.itemHeader {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 25%;
+}
+
+.editContainer {
+    width: 10%;
+    position: relative;
+}
+
+.itemEdit {
+    width: 30%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.circle {
+    width: .8em;
+    height: .8em;
+    border-radius: 10em;
+}
+
+.red {
+    background-color: rgb(190, 0, 0);
+}
+
+.green {
+    background-color: rgb(6, 190, 0);
+}
+
+.itemStatus {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .5em;
+    height: 1.6em;
+    width: 6em;
+    padding: 1.7em;
+    padding-left: .9em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    font-size: .9em;
+    border-radius: 10em;
+    color: whitesmoke;
+    background-color: rgb(30, 36, 56);
+}
+
+.absoluteEdit {
+    position: absolute;
+    top: 1.8em;
+    right: 3.5em;
+}
+
+.zindex {
+    position: relative;
+    z-index: 100;
+}
+
+.absoluteText {
+    box-shadow: rgba(0, 0, 0, 0.35) 0em .3em .5em;
+    background-color: rgb(255, 255, 255);
+    width: 14em;
+    border-radius: .5em;
+    z-index: 100;
+    user-select: none;
+    position: relative;
+}
+
+.change {
+    border-radius: .5em;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 1em;
+}
+
+.cancel {
+    border-radius: .5em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 1em;
+    transition: all .3s;
+}
+
+.change:hover,
+.cancel:hover {
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(219, 217, 217);
+}
+
+@media screen and (max-width: 850px) {
+    .listItem {
+        font-size: 2vw;
+    }
+}

@@ -1,0 +1,118 @@
+.papa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    padding-left: 15.7em;
+    padding-right: 15.7em;
+    padding-bottom: 5em;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.header {
+    margin-top: 0;
+}
+
+/* Scroll Box */
+
+.crossed {
+    text-decoration: line-through;
+}
+
+.section {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    padding: 1em;
+    width: 38em
+}
+
+.obj {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.item {
+    width: 100%;
+    padding-bottom: .2em;
+    border-bottom: 1px solid rgba(24, 23, 23, .1);
+}
+
+/* Buttons */
+
+.button {
+    color: white;
+    padding: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: .3em;
+    cursor: pointer;
+    background-color: rgb(30, 36, 56);
+    user-select: none;
+    transition: all .3s;
+    position: absolute;
+}
+
+.left {
+    bottom: 0;
+    left: 1em;
+}
+
+.right {
+    bottom: 0;
+    right: 1em;
+}
+
+.button:hover {
+    background-color: rgba(30, 36, 56, 0.7);
+}
+
+/* Loading */
+
+.centerLoader {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.dim {
+    width: 100%;
+    opacity: .5;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .papa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3em;
+        padding-left: 15vw;
+        padding-right: 16vw;
+        padding-bottom: 5em;
+        position: relative;
+    }
+
+    .section {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+        padding: 1em;
+        width: 50vw;
+    }
+}

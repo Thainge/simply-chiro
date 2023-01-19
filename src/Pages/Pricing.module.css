@@ -1,0 +1,236 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-top: 6em;
+    padding-bottom: 3em;
+}
+
+.childContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75em;
+    position: relative;
+    background-color: white;
+    border-radius: 1em;
+    z-index: 9;
+    box-shadow: rgba(0, 0, 0, 0.3) 0em 1.9em 3.8em, rgba(0, 0, 0, 0.22) 0em 1.5em 1.2em;
+}
+
+/* Fixed lines */
+
+.fixedLines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.line {
+    height: 100%;
+    border-left: 1px dashed rgba(0, 0, 0, 0.1);
+    width: .1em;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.papa {
+    padding: 2em;
+    min-height: 31.4em;
+}
+
+/* Card */
+
+.cardContainer {
+    height: 11em;
+    width: 75em;
+}
+
+/* Pricing Header */
+
+.contentHeader {
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: .2em;
+    width: 15em;
+}
+
+.contentHeadText {
+    color: rgb(114, 48, 221);
+    font-weight: bold;
+    margin: 0;
+}
+
+.button {
+    color: white;
+    padding: 1em;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    border-radius: .3em;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: rgb(30, 36, 56);
+    text-align: center;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: rgba(30, 36, 56, 0.7);
+}
+
+/* Card */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3em;
+    position: relative;
+    z-index: 9;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 .6em 1em .6em;
+}
+
+.header {
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(114, 48, 221);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    width: 100%;
+}
+
+.textBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 20em;
+    letter-spacing: .03em;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: rgb(77, 77, 77);
+    text-align: center;
+}
+
+.costsArr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1em;
+    margin-bottom: 2em;
+}
+
+/* Item */
+
+.item {
+    width: 20em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    padding: .25em;
+}
+
+.cost {
+    color: rgb(114, 48, 221);
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    border-top: none;
+    padding: .25em;
+}
+
+@media screen and (max-width: 1300px) {
+    .cardContainer {
+        height: 11em;
+        width: 90%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .childContainer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        padding: 0;
+        padding-top: 13vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .childContainer {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .contentHeader {
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .contentHeadText {
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    /* Card */
+
+    .card {
+        margin-top: 3em;
+    }
+
+    .header {
+        font-size: unset;
+        padding-top: .5em;
+        padding-bottom: 1em;
+    }
+
+    .text {
+        width: 90vw;
+        letter-spacing: .03em;
+        margin-top: .5em;
+        margin-bottom: 1em;
+        font-size: unset;
+    }
+
+    /* Item */
+
+    .item {
+        width: 90%;
+    }
+}

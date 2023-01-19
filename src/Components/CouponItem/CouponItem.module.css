@@ -1,0 +1,123 @@
+.couponItem {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    padding: 1em;
+    padding: .5em;
+    border-bottom: 1px solid rgb(172, 169, 169);
+}
+
+.couponText {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.couponNumbers {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.couponDelete {
+    width: 5%;
+}
+
+.button {
+    color: white;
+    padding: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: .3em;
+    cursor: pointer;
+    background-color: rgb(30, 36, 56);
+    user-select: none;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: rgba(30, 36, 56, .7);
+}
+
+.button:active {
+    filter: brightness(.7);
+}
+
+.editIcon {
+    margin-left: .2em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.editIcon:hover {
+    scale: 1.2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.input {
+    width: 7em;
+    padding: .4em;
+    font-size: .9em;
+    border: none;
+    outline: none;
+    z-index: 2;
+    background-color: #d3d3d3;
+}
+
+.input:focus {
+    background-color: #dfdfdf;
+}
+
+.inputPercent {
+    width: 3em;
+    padding: .4em;
+    border: none;
+    font-size: .9em;
+    outline: none;
+    z-index: 2;
+    background-color: #d3d3d3;
+}
+
+.inputPercent:focus {
+    background-color: #dfdfdf;
+}
+
+@media screen and (max-width: 1300px) {
+    .couponItem {
+        font-size: .9em;
+        padding: 1vw;
+        padding: .5vw;
+    }
+
+    .inputPercent {
+        width: 3vw;
+        padding: .4vw;
+        font-size: .9em;
+    }
+
+    .button {
+        padding: 1em;
+        margin: .5em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        border-radius: .3em;
+    }
+
+    .couponText {
+        width: 40%;
+    }
+
+    .couponNumbers {
+        width: 40%;
+    }
+}

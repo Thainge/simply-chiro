@@ -1,0 +1,292 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.childContainer {
+    display: flex;
+    flex-direction: column;
+    width: 66.5em;
+    margin-top: 5em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0em 1.9em 3.8em, rgba(0, 0, 0, 0.22) 0em 1.5em 1.2em;
+    margin-bottom: 1.5em;
+    min-height: 75vh;
+    padding: 4em;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.absoluteCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Picker */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CalendarContainer {
+    width: 53em;
+    position: relative;
+    padding: 4em;
+    padding-left: 2.4em;
+    padding-bottom: 4em;
+    padding-top: 4em;
+    border-radius: 1em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.3) 0em 1.9em 3.8em, rgba(0, 0, 0, 0.22) 0em 1.5em 1.2em;
+}
+
+.closeButton,
+.submitButton,
+.cancelButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.6em;
+    padding: 1em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    font-size: 1em;
+    border-radius: 10em;
+    color: whitesmoke;
+    background-color: rgb(30, 36, 56);
+    user-select: none;
+    cursor: pointer;
+}
+
+.closeButton {
+    width: 2em;
+    height: 2em;
+    padding: .4em;
+}
+
+.closeButton:hover,
+.submitButton:hover,
+.cancelButton:hover {
+    background-color: rgba(30, 36, 56, .7);
+}
+
+.closeButton {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+}
+
+.submitButton {
+    position: absolute;
+    bottom: .5em;
+    left: .5em;
+}
+
+.cancelButton {
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+}
+
+.h2 {
+    margin-top: 0;
+}
+
+/* Cancel Popup */
+.cancelContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: .5em;
+    padding: 1em;
+    padding-bottom: 1em;
+    border-radius: 1em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.3) 0em 1.9em 3.8em, rgba(0, 0, 0, 0.22) 0em 1.5em 1.2em;
+}
+
+.cancelText {
+    font-weight: bold;
+}
+
+.cancelRow {
+    margin-top: 2em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.yes {
+    color: white;
+    padding: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: .3em;
+    cursor: pointer;
+    background-color: rgb(202, 43, 43);
+    user-select: none;
+    transition: all .3s;
+}
+
+.yes:hover {
+    filter: brightness(80%);
+}
+
+.no {
+    color: white;
+    padding: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: .3em;
+    cursor: pointer;
+    background-color: rgb(30, 36, 56);
+    user-select: none;
+    transition: all .3s;
+}
+
+.no:hover {
+    background-color: rgba(30, 36, 56, 0.7);
+}
+
+/* Appointment list */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.h22 {
+    margin: 0;
+}
+
+.list {
+    background-color: #c2c2c25e;
+    box-shadow: rgba(0, 0, 0, 0.35) 0em .3em .5em;
+    margin: 0;
+    padding: 0;
+}
+
+/* list header */
+
+.listHeader {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background-color: rgb(219, 217, 217);
+}
+
+.itemBold {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    width: 25%;
+}
+
+.itemBold:last-child {
+    width: 10%;
+}
+
+.itemsContainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.showing {
+    padding: 1em;
+}
+
+/* Error */
+
+.error {
+    position: absolute;
+    bottom: -5em;
+    left: 24.3%;
+    width: 28.6em;
+    height: 4em;
+    border: .16em solid red;
+    font-weight: bold;
+    background-color: rgb(255, 220, 220);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3em;
+    border-radius: .5em;
+}
+
+.errorIcon {
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    margin-right: 1em;
+}
+
+.errorText {
+    color: rgb(255, 110, 110);
+}
+
+/* Loader */
+
+.centerLoader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .childContainer {
+        width: 80%;
+        padding: 4em;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .childContainer {
+        margin-top: 8vw;
+        border-radius: 0;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .itemBold {
+        font-size: 2vw;
+    }
+
+    .showing {
+        font-size: 2.5vw;
+    }
+}

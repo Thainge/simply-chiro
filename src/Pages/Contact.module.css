@@ -1,0 +1,199 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 6em;
+    height: auto;
+    width: 100%;
+}
+
+.childContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75em;
+    position: relative;
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0em 1.9em 3.8em, rgba(0, 0, 0, 0.22) 0em 1.5em 1.2em;
+}
+
+/* Fixed lines */
+
+.fixedLines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.line {
+    height: 100%;
+    border-left: 1px dashed rgba(0, 0, 0, 0.09);
+    width: .1em;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.papa {
+    padding: 2em;
+    min-height: 31.4em;
+}
+
+/* Card */
+
+.cardContainer {
+    height: 11em;
+    width: 75em;
+}
+
+/* Headers */
+
+.contentHeadText {
+    font-weight: bold;
+    margin: 0;
+}
+
+.contentChildText {
+    font-weight: bold;
+    color: rgb(114, 48, 221);
+    margin: 0;
+    margin-top: .5em;
+    margin-bottom: 1.5em;
+}
+
+.contentHeader {
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 1em;
+    width: 15em;
+}
+
+/* Form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin-top: 1em;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    row-gap: .3em;
+    align-items: flex-start;
+    position: relative;
+    z-index: 9;
+}
+
+.label i {
+    font-size: .8em;
+}
+
+.input {
+    width: 15em;
+    padding: .8em;
+    border: none;
+    outline: none;
+    background-color: rgb(230, 230, 230);
+    position: relative;
+    z-index: 9;
+}
+
+.input:focus {
+    background-color: #d3d3d3;
+}
+
+.textBox {
+    height: 20em;
+    width: 29.4em;
+    max-width: 29.4em;
+    height: 6em;
+    transition: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(230, 230, 230) !important;
+}
+
+.buttonBox {
+    width: 10em;
+}
+
+.button {
+    width: 8em;
+    color: white;
+    padding: 1em;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    border-radius: .3em;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: rgb(30, 36, 56);
+    user-select: none;
+    border: none;
+    outline: none;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: rgba(30, 36, 56, 0.7);
+}
+
+@media screen and (max-width: 1300px) {
+    .cardContainer {
+        height: 11em;
+        width: 90%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .childContainer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        padding: 0;
+        padding-top: 13vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .childContainer {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .contentHeader {
+        width: 100%;
+        font-size: unset;
+        text-align: center;
+    }
+
+    .textBox {
+        width: 100%;
+        max-width: 15em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .form {
+        width: 50vw;
+    }
+}

@@ -1,0 +1,273 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.childContainer {
+    display: flex;
+    flex-direction: column;
+    width: 66.5em;
+    margin-top: 5em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0em 1.9em 3.8em, rgba(0, 0, 0, 0.22) 0em 1.5em 1.2em;
+    margin-bottom: 1.5em;
+    min-height: 75vh;
+    border-radius: 1em;
+    padding: 4em;
+    background-color: white;
+    position: relative;
+}
+
+/* Appointments */
+
+.h2 {
+    border-top: 1px solid rgb(214, 214, 214);
+    margin-top: 3em;
+    padding-top: 2.5em;
+}
+
+/* Admin Panel */
+
+.edith2:first-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.edith2 {
+    border-top: 1px solid rgb(214, 214, 214);
+    margin-top: 3em;
+    padding-top: 2.5em;
+}
+
+/* Schedule Appointments */
+.editContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    box-shadow: rgba(0, 0, 0, 0.5) 0em 1em .8em -.4em;
+    margin-top: 2em;
+}
+
+.appointmentContainer {
+    border: 2px solid rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 10em;
+}
+
+.contentContainer2 {
+    display: flex;
+    flex-direction: column;
+    width: 13.5em;
+    margin-top: 2em;
+}
+
+.appointmentContainer2 {
+    box-shadow: rgba(0, 0, 0, 0.5) 0em 1em .8em -.4em;
+    min-height: 10em;
+    position: relative;
+}
+
+.appointmentTitle {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.4em;
+    background-color: rgb(230, 230, 230);
+    background: linear-gradient(125.95deg, #C700BF 10.95%, #7DA900 100%), linear-gradient(341.1deg, #00C2FF 7.52%, #4E00B1 77.98%), linear-gradient(222.34deg, #A90000 12.99%, #00FFE0 87.21%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
+    background-blend-mode: screen, color-dodge, color-dodge, normal;
+    box-shadow: rgba(0, 0, 0, 0.5) 0em .5em 1.4em -1em;
+    z-index: 2;
+}
+
+.appointment {
+    background-color: #c2c2c25e;
+    min-height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: .9em;
+    padding: 1em;
+    border-top: 2px solid rgb(238, 238, 238);
+    transition: all .3s;
+}
+
+.addNew {
+    background-color: #c2c2c25e;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    width: 100%;
+}
+
+.activeAppointment {
+    background-color: #b3b3b3b9;
+}
+
+.appointment:first-child {
+    border: none;
+}
+
+.appointmentHeader {
+    font-size: 1.1em;
+    margin-bottom: .4em;
+    font-weight: bold;
+}
+
+.extra {
+    display: flex;
+}
+
+.extraDash {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.appointmentTime {
+    font-weight: bold;
+}
+
+.appointmentCost {
+    font-weight: bold;
+    margin-bottom: .4em;
+}
+
+.button {
+    color: white;
+    padding: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: .3em;
+    cursor: pointer;
+    background-color: #1e2438;
+    user-select: none;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: rgba(30, 36, 56, .7);
+}
+
+.button:active {
+    filter: brightness(.7);
+}
+
+/* Coupons */
+.couponContainer {
+    background-color: rgb(235, 234, 234);
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.5) 0em 1em .8em -.4em;
+    position: relative;
+}
+
+.bold {
+    background-color: #c2c2c25e;
+    font-weight: bold;
+}
+
+.couponItem {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    padding: 1em;
+    padding: .5em;
+    border-bottom: 1px solid rgb(172, 169, 169);
+}
+
+.couponText {
+    width: 30%;
+}
+
+.couponNumbers {
+    width: 70%;
+}
+
+.buttonContainer {
+    margin-top: 2em;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Loading */
+
+.relative {
+    position: relative;
+}
+
+.centerLoader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.dim {
+    width: 100%;
+    opacity: .5;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .childContainer {
+        width: 80%;
+
+        min-height: 75vh;
+    }
+
+    .editContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .couponItem {
+        font-size: .9em;
+    }
+
+    .couponText {
+        width: 40%;
+    }
+
+    .couponNumbers {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .childContainer {
+        width: 90%;
+        margin-top: 8vw;
+    }
+
+    .contentContainer2 {
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contentContainer {
+        width: auto;
+    }
+}
