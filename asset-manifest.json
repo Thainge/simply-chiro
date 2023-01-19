@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/simply-chiro/static/css/main.f4c1fa29.css",
+    "main.js": "/simply-chiro/static/js/main.2a0746f8.js",
+    "static/media/empty.png": "/simply-chiro/static/media/empty.cbc16de6c0f05eb5516c.png",
+    "index.html": "/simply-chiro/index.html",
+    "main.f4c1fa29.css.map": "/simply-chiro/static/css/main.f4c1fa29.css.map",
+    "main.2a0746f8.js.map": "/simply-chiro/static/js/main.2a0746f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4c1fa29.css",
+    "static/js/main.2a0746f8.js"
+  ]
+}
