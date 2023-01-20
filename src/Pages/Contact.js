@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import Card from '../Components/Card/Card';
+import { sendEmail } from '../Hooks/AppointmentHooks';
+import PuffLoader from "react-spinners/PuffLoader";
 import styles from './Contact.module.css';
+import Fade from 'react-reveal/Fade';
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -9,6 +12,17 @@ function Contact() {
         phone: '',
         message: '',
     });
+
+    const [loading, setLoading] = useState(false);
+    const [sent, setSent] = useState(false);
+
+    const sendForm = async (e) => {
+        e.preventDefault();
+        setLoading(() => true);
+        await sendEmail(formData);
+        setLoading(() => false);
+        setSent(() => true);
+    }
 
     return (
         <div className={styles.container}>
@@ -30,7 +44,7 @@ function Contact() {
 
 
                     <h2 className={styles.contentHeadText}>Email Me</h2>
-                    <form className={styles.form}>
+                    <form className={styles.form} onSubmit={sendForm}>
                         <label className={styles.label}>
                             Name *
                             <input placeholder='Your Name' value={formData.name} onChange={(e) => setFormData((prev) => {
@@ -59,9 +73,16 @@ function Contact() {
                                 return newObj;
                             })} />
                         </label>
-                        <div className={styles.buttonBox}>
-                            <input className={styles.button} type={'submit'} value={'Send Email'}></input>
-                        </div>
+                        {
+                            sent ? <Fade up><div>Message Sent!</div></Fade> : <div className={styles.buttonBox}>
+                                <input className={styles.button} type={'submit'} value={'Send Email'}></input>
+                            </div>
+                        }
+                        {
+                            loading ? <div className={styles.centerLoader}>
+                                <PuffLoader color="#1e2438" />
+                            </div> : <></>
+                        }
                     </form>
                 </div>
             </div>

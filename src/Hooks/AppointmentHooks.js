@@ -1,5 +1,15 @@
 let NODE_URL = 'https://simply-chiro.herokuapp.com/appointments';
 
+const sendEmail = async (data) => {
+    return await fetch(`${NODE_URL}/sendemail`, {
+        method: "post",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    });
+}
+
 const GetAllAppointments = async (userID) => {
     const response = await fetch(`${NODE_URL}`, {
         method: 'GET',
@@ -43,6 +53,7 @@ const CancelAppointment = async (appID) => {
 }
 
 export {
+    sendEmail,
     GetAllAppointments,
     GetAppointments,
     AddAppointment,

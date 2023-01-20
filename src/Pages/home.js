@@ -187,7 +187,7 @@ function HomePage() {
                         </div>
                         <Fade up distance={'2em'} delay={1000}>
                             <div className={styles.buttonContainer3}>
-                                <div className={styles.contentButton}>Schedule Online ➔</div>
+                                <Link to={'/schedule'} className={styles.contentButton}>Schedule Online ➔</Link>
                             </div>
                         </Fade>
                     </div>
@@ -249,7 +249,7 @@ function HomePage() {
                             </Fade>
                             <Fade up distance={'1em'} delay={900}>
                                 <div className={styles.buttonContainer}>
-                                    <div className={styles.contentButton}>Schedule Online ➔</div>
+                                    <Link to={'/schedule'} className={styles.contentButton}>Schedule Online ➔</Link>
                                 </div>
                             </Fade>
                         </div>
