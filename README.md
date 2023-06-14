@@ -1,4 +1,5 @@
 # SimplyChiro
+![alt text](https://github.com/Thainge/portfolio/blob/gh-pages/static/media/3.ab4e1a45e49d3927030f.png?raw=true)
 
 [SimplyChiro Website](https://thainge.github.io/simply-chiro/)
 
