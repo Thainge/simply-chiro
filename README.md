@@ -23,4 +23,4 @@ Online appointment scheduling software for Dr.Atkin's patients. Appointments can
 - Admin Panel
 - Standalone Schedule
 
-CopyRight 2022 Tobey Hainge
+© 2023 Tobey Hainge All rights reserved.
