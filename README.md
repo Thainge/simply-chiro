@@ -1,7 +1,8 @@
 # SimplyChiro
-![alt text](https://github.com/Thainge/portfolio/blob/gh-pages/static/media/3.ab4e1a45e49d3927030f.png?raw=true)
 
 [SimplyChiro Website](https://thainge.github.io/simply-chiro/)
+
+<img src="https://github.com/Thainge/portfolio/blob/gh-pages/static/media/3.ab4e1a45e49d3927030f.png?raw=true" width="500" />
 
 Online appointment scheduling software for Dr.Atkin's patients. Appointments can be booked and managed online with the patient dashboard, including an admin panel for Dr.Atkins to manage all appointment info, availability, and coupon codes.
 
@@ -23,4 +24,4 @@ Online appointment scheduling software for Dr.Atkin's patients. Appointments can
 - Admin Panel
 - Standalone Schedule
 
-© 2023 Tobey Hainge All rights reserved.
+Copyright © 2023 Tobey Hainge All rights reserved.
